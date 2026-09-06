@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tentang Kami - Risol Mayo "Cak Gendut"</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#fffbeb',
+                            100: '#fef3c7',
+                            200: '#fde68a',
+                            300: '#fcd34d',
+                            400: '#fbbf24',
+                            500: '#f59e0b',
+                            600: '#d97706',
+                            700: '#b45309',
+                            800: '#92400e',
+                            900: '#78350f',
+                        },
+                        cta: {
+                            500: '#ef4444',
+                            600: '#dc2626',
+                        }
+                    },
+                    fontFamily: {
+                        display: ['"Quicksand"', 'sans-serif'],
+                        sans: ['"Nunito"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        .noise-bg {
+            background-image: radial-gradient(rgba(245, 158, 11, 0.05) 1px, transparent 0);
+            background-size: 24px 24px;
+        }
+    </style>
+</head>
+<body class="bg-brand-50 text-brand-900 font-sans antialiased noise-bg selection:bg-brand-500 selection:text-white">
+
+    <!-- Sticky Navbar -->
+    <header id="navbar" class="fixed top-0 left-0 right-0 z-50 bg-brand-50/90 backdrop-blur-md border-b border-brand-200 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-full bg-brand-500 text-white flex items-center justify-center font-display text-xl font-bold group-hover:bg-brand-600 transition-colors"><img src="image/image 2.jpg" alt="image 2" style="border-radius: 100%;"></div>
+                <div>
+                    <span class="font-display text-xl tracking-wide font-bold block leading-tight text-brand-800">CAK GENDUT</span>
+                    <span class="text-[10px] tracking-widest text-brand-600 uppercase font-bold">Risol Mayo</span>
+                </div>
+            </a>
+
+            <nav class="hidden md:flex items-center gap-8 font-bold text-sm tracking-wide">
+                <a href="index.html" class="text-brand-800 hover:text-brand-600 transition-colors">Beranda</a>
+                <a href="about.html" class="text-brand-600 transition-colors">Tentang Kami</a>
+                <a href="products.html" class="text-brand-800 hover:text-brand-600 transition-colors">Menu</a>
+                <a href="cara-pesan.html" class="text-brand-800 hover:text-brand-600 transition-colors">Cara Pesan</a>
+                <a href="contact.html" class="text-brand-800 hover:text-brand-600 transition-colors">Kontak</a>
+            </nav>
+
+            <div class="hidden md:flex items-center gap-4">
+                <a href="products.html" class="px-5 py-2.5 bg-cta-500 text-white rounded-full text-xs font-bold uppercase tracking-widest hover:bg-cta-600 transition-all shadow-md">
+                    Pesan Sekarang
+                </a>
+            </div>
+
+            <button id="mobile-menu-btn" class="md:hidden text-brand-900 p-2 focus:outline-none">
+                <i data-lucide="menu" class="w-7 h-7"></i>
+            </button>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-brand-50 border-b border-brand-200 px-6 py-6 space-y-4 shadow-xl">
+            <a href="index.html" class="block text-lg font-display font-bold text-brand-800">Beranda</a>
+            <a href="about.html" class="block text-lg font-display font-bold text-brand-600">Tentang Kami</a>
+            <a href="products.html" class="block text-lg font-display font-bold text-brand-800">Menu</a>
+            <a href="cara-pesan.html" class="block text-lg font-display font-bold text-brand-800">Cara Pesan</a>
+            <a href="contact.html" class="block text-lg font-display font-bold text-brand-800">Kontak</a>
+            <div class="pt-4 border-t border-brand-200">
+                <a href="products.html" class="block w-full py-3 bg-cta-500 text-white text-center rounded-full text-xs font-bold uppercase tracking-widest">
+                    Pesan Sekarang
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="pt-20">
+
+        <!-- Page Header -->
+        <section class="py-20 px-6 max-w-4xl mx-auto text-center space-y-6">
+            <span class="text-xs font-bold uppercase tracking-widest text-cta-500">Kisah Cak Gendut</span>
+            <h1 class="font-display text-4xl sm:text-5xl font-bold tracking-tight text-brand-900">Perjalanan Rasa Sejak 2022</h1>
+            <p class="text-brand-700 text-lg sm:text-xl font-medium leading-relaxed">
+                Dari dapur rumahan sederhana, kami bermimpi menyajikan risol mayo yang nikmat, lumer, namun tetap bersahabat di kantong semua orang.
+            </p>
+        </section>
+
+        <!-- Story Section -->
+        <section class="pb-24 px-6 max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <!-- Image Placeholder -->
+                <div class="aspect-square rounded-3xl overflow-hidden shadow-lg border border-brand-300">
+                    <img src="image/image 4.jpg" alt="Risol Mayo Cak Gendut - Home Production" class="w-full h-full object-cover">
+                </div>
+
+                <!-- Text Content -->
+                <div class="space-y-8">
+                    <div class="space-y-4">
+                        <h2 class="font-display text-3xl font-bold text-brand-900">Berawal dari Home Production</h2>
+                        <p class="text-brand-800 font-medium leading-relaxed">
+                            Risol Mayo "Cak Gendut" memulai perjalanannya pada tahun 2022. Dikelola langsung oleh <strong>Mas Surya</strong> selaku pemilik, usaha ini lahir dari kecintaan pada camilan tradisional yang dipadukan dengan sentuhan modern berupa isian mayones yang lumer dan gurih.
+                        </p>
+                        <p class="text-brand-800 font-medium leading-relaxed">
+                            Bagi Mas Surya, menjaga kualitas rasa adalah hal yang utama. Meskipun berskala UMKM rumahan, setiap proses produksi dilakukan dengan standar kebersihan yang baik dan pemilihan bahan baku yang berkualitas, demi menjaga cita rasa autentik di setiap gigitannya.
+                        </p>
+                    </div>
+
+                    <div class="p-6 bg-white border border-brand-200 rounded-2xl shadow-sm space-y-3 border-l-4 border-l-cta-500">
+                        <h3 class="font-display text-xl font-bold text-brand-900">Komitmen Kami</h3>
+                        <p class="text-brand-700 font-medium text-sm">
+                            "Menyajikan risol mayo dengan rasa yang enak, isian melimpah, dan harga yang terjangkau agar bisa dinikmati oleh semua kalangan, dari anak-anak hingga orang dewasa."
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Credibility Section -->
+        <section class="py-20 bg-brand-100 px-6 border-t border-brand-200">
+            <div class="max-w-4xl mx-auto text-center space-y-8">
+                <div class="w-16 h-16 mx-auto rounded-full bg-white text-brand-600 flex items-center justify-center shadow-md">
+                    <i data-lucide="graduation-cap" class="w-8 h-8"></i>
+                </div>
+                <h2 class="font-display text-3xl font-bold text-brand-900">Dipercaya Sebagai Mitra Pendampingan</h2>
+                <p class="text-brand-800 font-medium text-lg leading-relaxed">
+                    Dedikasi kami dalam mengelola dan mengembangkan usaha kuliner rumahan telah mendapat kepercayaan dari akademisi. Risol Mayo "Cak Gendut" pernah menjadi mitra binaan dalam program pengabdian masyarakat oleh mahasiswa <strong>Manajemen Universitas PGRI Madiun</strong>. 
+                </p>
+                <p class="text-brand-700 font-medium text-sm">
+                    Dukungan dan kolaborasi ini menjadi motivasi kami untuk terus bertumbuh, menjaga standar kualitas, dan memberikan pelayanan terbaik bagi para pelanggan setia di Madiun dan sekitarnya.
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Shared Footer -->
+    <footer class="bg-brand-900 text-brand-200 pt-16 pb-8 px-6">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 pb-12 border-b border-brand-800">
+            <div class="space-y-6">
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-full bg-brand-500 text-white flex items-center justify-center font-display text-xl font-bold"><img src="image/image 2.jpg" alt="image 2" style="border-radius: 100%;"></div>
+                    <span class="font-display text-xl tracking-wide text-white font-bold">Risol Mayo Cak Gendut</span>
+                </div>
+                <p class="text-sm text-brand-200 font-medium leading-relaxed">
+                    UMKM kuliner rumahan dari Madiun yang menyajikan aneka risol mayo lumer dengan kualitas bahan terbaik dan resep tradisional sejak 2022.
+                </p>
+            </div>
+
+            <div class="space-y-4">
+                <h4 class="font-display text-white font-bold tracking-wide text-lg">Menu Cepat</h4>
+                <ul class="space-y-2 text-sm font-medium">
+                    <li><a href="index.html" class="hover:text-brand-400 transition-colors">Beranda</a></li>
+                    <li><a href="about.html" class="hover:text-brand-400 transition-colors">Tentang Kami</a></li>
+                    <li><a href="products.html" class="hover:text-brand-400 transition-colors">Varian Menu</a></li>
+                    <li><a href="cara-pesan.html" class="hover:text-brand-400 transition-colors">Cara Pesan</a></li>
+                    <li><a href="contact.html" class="hover:text-brand-400 transition-colors">Kontak & Lokasi</a></li>
+                </ul>
+            </div>
+
+            <div class="space-y-4">
+                <h4 class="font-display text-white font-bold tracking-wide text-lg">Hubungi Kami</h4>
+                <p class="text-sm font-medium">
+                    Jl. Letkol Suwarno, Bumimas II, Blok HH/08, Kota Madiun
+                </p>
+                <div class="flex flex-wrap gap-3 pt-2">
+                    <a href="https://www.instagram.com/risolmayo_cak.gendut/" target="_blank" rel="noopener noreferrer" title="Instagram" class="w-10 h-10 rounded-full bg-brand-800 flex items-center justify-center hover:bg-brand-500 transition-colors text-white">
+                        <i data-lucide="instagram" class="w-5 h-5"></i>
+                    </a>
+                    <a href="https://www.tiktok.com/@risolmayo_cak.gendut" target="_blank" rel="noopener noreferrer" title="TikTok" class="w-10 h-10 rounded-full bg-brand-800 flex items-center justify-center hover:bg-brand-500 transition-colors text-white">
+                        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/></svg>
+                    </a>
+                    <a href="https://gofood.co.id/en/madiun/restaurant/risol-mayo-cak-gendut-jl-letkol-suwarno-bumi-mas-2-10be9e30-9196-4947-b6d4-d0c4edbf8ae3" target="_blank" rel="noopener noreferrer" title="GoFood" class="w-10 h-10 rounded-full bg-brand-800 flex items-center justify-center hover:bg-cta-500 transition-colors text-white">
+                        <i data-lucide="shopping-bag" class="w-5 h-5"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto pt-8 flex flex-col md:flex-row items-center justify-between text-xs text-brand-400 font-medium gap-4">
+            <p>&copy; 2026 Risol Mayo Cak Gendut. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+        const mobileBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>

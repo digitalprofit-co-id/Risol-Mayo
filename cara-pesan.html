@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cara Pesan - Risol Mayo "Cak Gendut"</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#fffbeb',
+                            100: '#fef3c7',
+                            200: '#fde68a',
+                            300: '#fcd34d',
+                            400: '#fbbf24',
+                            500: '#f59e0b',
+                            600: '#d97706',
+                            700: '#b45309',
+                            800: '#92400e',
+                            900: '#78350f',
+                        },
+                        cta: {
+                            50:  '#fef2f2',
+                            200: '#fecaca',
+                            500: '#ef4444',
+                            600: '#dc2626',
+                        }
+                    },
+                    fontFamily: {
+                        display: ['"Quicksand"', 'sans-serif'],
+                        sans: ['"Nunito"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        .noise-bg {
+            background-image: radial-gradient(rgba(245, 158, 11, 0.05) 1px, transparent 0);
+            background-size: 24px 24px;
+        }
+    </style>
+</head>
+<body class="bg-brand-50 text-brand-900 font-sans antialiased noise-bg selection:bg-brand-500 selection:text-white">
+
+    <!-- Sticky Navbar -->
+    <header id="navbar" class="fixed top-0 left-0 right-0 z-50 bg-brand-50/90 backdrop-blur-md border-b border-brand-200 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-full bg-brand-500 text-white flex items-center justify-center font-display text-xl font-bold group-hover:bg-brand-600 transition-colors overflow-hidden">
+                    <img src="image/image 2.jpg" alt="Logo Cak Gendut" style="border-radius:100%;width:100%;height:100%;object-fit:cover;">
+                </div>
+                <div>
+                    <span class="font-display text-xl tracking-wide font-bold block leading-tight text-brand-800">CAK GENDUT</span>
+                    <span class="text-[10px] tracking-widest text-brand-600 uppercase font-bold">Risol Mayo</span>
+                </div>
+            </a>
+
+            <nav class="hidden md:flex items-center gap-8 font-bold text-sm tracking-wide">
+                <a href="index.html" class="text-brand-800 hover:text-brand-600 transition-colors">Beranda</a>
+                <a href="about.html" class="text-brand-800 hover:text-brand-600 transition-colors">Tentang Kami</a>
+                <a href="products.html" class="text-brand-800 hover:text-brand-600 transition-colors">Menu</a>
+                <a href="cara-pesan.html" class="text-brand-600 transition-colors">Cara Pesan</a>
+                <a href="contact.html" class="text-brand-800 hover:text-brand-600 transition-colors">Kontak</a>
+            </nav>
+
+            <div class="hidden md:flex items-center gap-4">
+                <a href="products.html" class="px-5 py-2.5 bg-cta-500 text-white rounded-full text-xs font-bold uppercase tracking-widest hover:bg-cta-600 transition-all shadow-md">
+                    Lihat Menu
+                </a>
+            </div>
+
+            <button id="mobile-menu-btn" class="md:hidden text-brand-900 p-2 focus:outline-none">
+                <i data-lucide="menu" class="w-7 h-7"></i>
+            </button>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-brand-50 border-b border-brand-200 px-6 py-6 space-y-4 shadow-xl">
+            <a href="index.html" class="block text-lg font-display font-bold text-brand-800">Beranda</a>
+            <a href="about.html" class="block text-lg font-display font-bold text-brand-800">Tentang Kami</a>
+            <a href="products.html" class="block text-lg font-display font-bold text-brand-800">Menu</a>
+            <a href="cara-pesan.html" class="block text-lg font-display font-bold text-brand-600">Cara Pesan</a>
+            <a href="contact.html" class="block text-lg font-display font-bold text-brand-800">Kontak</a>
+            <div class="pt-4 border-t border-brand-200">
+                <a href="products.html" class="block w-full py-3 bg-cta-500 text-white text-center rounded-full text-xs font-bold uppercase tracking-widest">
+                    Lihat Menu
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="pt-20">
+
+        <!-- Page Header -->
+        <section class="py-20 px-6 max-w-4xl mx-auto text-center space-y-6">
+            <span class="text-xs font-bold uppercase tracking-widest text-cta-500">Praktis & Mudah</span>
+            <h1 class="font-display text-4xl sm:text-5xl font-bold tracking-tight text-brand-900">Cara Pesan Risol Mayo</h1>
+            <p class="text-brand-700 text-lg max-w-2xl mx-auto font-medium">
+                Pilih metode pemesanan yang paling nyaman buat kamu. Kami siap melayani pengiriman online maupun datang langsung ke lokasi!
+            </p>
+        </section>
+
+        <!-- Jam Operasional Banner -->
+        <section class="px-6 max-w-4xl mx-auto mb-16">
+            <div class="bg-brand-500 text-white rounded-3xl px-8 py-6 flex flex-col sm:flex-row items-center justify-between gap-6 shadow-lg">
+                <div class="flex items-center gap-4">
+                    <div class="w-14 h-14 rounded-2xl bg-white/20 flex items-center justify-center shrink-0">
+                        <i data-lucide="clock" class="w-7 h-7"></i>
+                    </div>
+                    <div>
+                        <p class="text-brand-100 text-xs font-bold uppercase tracking-widest">Jam Operasional</p>
+                        <p class="text-white font-display text-2xl font-bold">10.00 WIB – Habis</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-4">
+                    <div class="w-14 h-14 rounded-2xl bg-cta-600 flex items-center justify-center shrink-0">
+                        <i data-lucide="calendar-x-2" class="w-7 h-7"></i>
+                    </div>
+                    <div>
+                        <p class="text-brand-100 text-xs font-bold uppercase tracking-widest">Hari Tutup</p>
+                        <p class="text-white font-display text-2xl font-bold">Buka Setiap Hari</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Order Methods -->
+        <section class="pb-24 px-6 max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+                <!-- Method 1: GoFood -->
+                <div class="p-8 rounded-3xl bg-white border border-brand-200 shadow-sm hover:shadow-md transition-all space-y-6">
+                    <div class="flex items-center gap-4">
+                        <div class="w-16 h-16 rounded-2xl bg-cta-500 text-white flex items-center justify-center shrink-0">
+                            <i data-lucide="smartphone" class="w-8 h-8"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-display text-2xl font-bold text-brand-900">Via GoFood</h3>
+                            <p class="text-brand-500 text-sm font-bold">Pesan langsung dari aplikasi</p>
+                        </div>
+                    </div>
+                    <ol class="space-y-3 text-brand-700 font-medium text-sm">
+                        <li class="flex items-start gap-3">
+                            <span class="w-6 h-6 rounded-full bg-cta-500 text-white text-xs font-bold flex items-center justify-center shrink-0 mt-0.5">1</span>
+                            Buka aplikasi <strong>Gojek</strong> di HP kamu
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="w-6 h-6 rounded-full bg-cta-500 text-white text-xs font-bold flex items-center justify-center shrink-0 mt-0.5">2</span>
+                            Ketik <strong>"Risol Mayo Cak Gendut"</strong> di kolom pencarian GoFood
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="w-6 h-6 rounded-full bg-cta-500 text-white text-xs font-bold flex items-center justify-center shrink-0 mt-0.5">3</span>
+                            Pilih varian, masukkan ke keranjang, lalu checkout
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="w-6 h-6 rounded-full bg-cta-500 text-white text-xs font-bold flex items-center justify-center shrink-0 mt-0.5">4</span>
+                            Tunggu pesanan diantar ke alamatmu!
+                        </li>
+                    </ol>
+                    <div class="pt-2">
+                        <a href="https://gofood.co.id/en/madiun/restaurant/risol-mayo-cak-gendut-jl-letkol-suwarno-bumi-mas-2-10be9e30-9196-4947-b6d4-d0c4edbf8ae3" target="_blank" rel="noopener noreferrer" class="w-full py-3.5 bg-cta-500 text-white text-sm font-bold uppercase tracking-wider rounded-2xl hover:bg-cta-600 transition-all flex items-center justify-center gap-2 shadow-md">
+                            <i data-lucide="external-link" class="w-4 h-4"></i> Buka di GoFood
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Method 2: GrabFood -->
+                <div class="p-8 rounded-3xl bg-white border border-brand-200 shadow-sm hover:shadow-md transition-all space-y-6">
+                    <div class="flex items-center gap-4">
+                        <div class="w-16 h-16 rounded-2xl bg-green-600 text-white flex items-center justify-center shrink-0">
+                            <i data-lucide="bike" class="w-8 h-8"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-display text-2xl font-bold text-brand-900">Via GrabFood</h3>
+                            <p class="text-green-600 text-sm font-bold">Pesan langsung dari aplikasi</p>
+                        </div>
+                    </div>
+                    <ol class="space-y-3 text-brand-700 font-medium text-sm">
+                        <li class="flex items-start gap-3">
+                            <span class="w-6 h-6 rounded-full bg-green-600 text-white text-xs font-bold flex items-center justify-center shrink-0 mt-0.5">1</span>
+                            Buka aplikasi <strong>Grab</strong> di HP kamu
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="w-6 h-6 rounded-full bg-green-600 text-white text-xs font-bold flex items-center justify-center shrink-0 mt-0.5">2</span>
+                            Ketik <strong>"Risol Mayo Cak Gendut"</strong> di kolom pencarian GrabFood
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="w-6 h-6 rounded-full bg-green-600 text-white text-xs font-bold flex items-center justify-center shrink-0 mt-0.5">3</span>
+                            Pilih varian, masukkan ke keranjang, lalu checkout
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="w-6 h-6 rounded-full bg-green-600 text-white text-xs font-bold flex items-center justify-center shrink-0 mt-0.5">4</span>
+                            Tunggu pesanan diantar ke alamatmu!
+                        </li>
+                    </ol>
+                    <div class="pt-2">
+                        <!-- ganti dengan link GrabFood asli -->
+                        <a href="#" class="w-full py-3.5 bg-green-600 text-white text-sm font-bold uppercase tracking-wider rounded-2xl hover:bg-green-700 transition-all flex items-center justify-center gap-2 shadow-md">
+                            <i data-lucide="external-link" class="w-4 h-4"></i> Buka di GrabFood
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Method 3: DM Sosmed -->
+                <div class="p-8 rounded-3xl bg-white border border-brand-200 shadow-sm hover:shadow-md transition-all space-y-6">
+                    <div class="flex items-center gap-4">
+                        <div class="w-16 h-16 rounded-2xl bg-brand-500 text-white flex items-center justify-center shrink-0">
+                            <i data-lucide="message-circle" class="w-8 h-8"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-display text-2xl font-bold text-brand-900">Via DM Sosial Media</h3>
+                            <p class="text-brand-500 text-sm font-bold">Instagram & TikTok</p>
+                        </div>
+                    </div>
+                    <p class="text-brand-700 font-medium text-sm">
+                        Langsung kirim pesan (DM) ke akun sosial media kami. Cocok untuk tanya-tanya, pre-order, atau pesanan dalam jumlah banyak.
+                    </p>
+                    <div class="space-y-3 pt-2">
+                        <a href="https://www.instagram.com/risolmayo_cak.gendut/" target="_blank" rel="noopener noreferrer" class="w-full py-3.5 bg-brand-50 text-brand-800 border border-brand-200 text-sm font-bold rounded-2xl hover:bg-brand-100 transition-all flex items-center justify-center gap-2">
+                            <i data-lucide="instagram" class="w-5 h-5 text-brand-600"></i> DM Instagram @risolmayo_cak.gendut
+                        </a>
+                        <a href="https://www.tiktok.com/@risolmayo_cak.gendut" target="_blank" rel="noopener noreferrer" class="w-full py-3.5 bg-brand-50 text-brand-800 border border-brand-200 text-sm font-bold rounded-2xl hover:bg-brand-100 transition-all flex items-center justify-center gap-2">
+                            <svg class="w-5 h-5 fill-current text-brand-700" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/></svg>
+                            DM TikTok @risolmayo_cak.gendut
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Method 4: Datang Langsung -->
+                <div class="p-8 rounded-3xl bg-white border border-brand-200 shadow-sm hover:shadow-md transition-all space-y-6">
+                    <div class="flex items-center gap-4">
+                        <div class="w-16 h-16 rounded-2xl bg-brand-600 text-white flex items-center justify-center shrink-0">
+                            <i data-lucide="store" class="w-8 h-8"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-display text-2xl font-bold text-brand-900">Datang Langsung</h3>
+                            <p class="text-brand-500 text-sm font-bold">Walk-in / Takeaway</p>
+                        </div>
+                    </div>
+                    <p class="text-brand-700 font-medium text-sm">
+                        Kamu bisa langsung mampir ke lokasi produksi kami. Beli fresh dari tempat, bisa pilih varian langsung, dan bawa pulang!
+                    </p>
+                    <div class="pt-2 space-y-4 border-t border-brand-100">
+                        <div class="flex items-start gap-3">
+                            <i data-lucide="map-pin" class="w-5 h-5 text-brand-500 shrink-0 mt-0.5"></i>
+                            <div>
+                                <p class="font-bold text-brand-900 text-sm">Alamat</p>
+                                <p class="text-brand-700 text-sm font-medium mt-0.5">Jl. Letkol Suwarno, Bumimas II, Blok HH/08, Kota Madiun</p>
+                            </div>
+                        </div>
+                        <a href="https://maps.app.goo.gl/fJuh4ipHV3HLaFEz9" target="_blank" rel="noopener noreferrer" class="w-full py-3.5 bg-brand-600 text-white text-sm font-bold rounded-2xl hover:bg-brand-700 transition-all flex items-center justify-center gap-2 shadow-md">
+                            <i data-lucide="navigation" class="w-4 h-4"></i> Buka Petunjuk Arah
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="py-24 bg-white border-t border-brand-200 px-6">
+            <div class="max-w-3xl mx-auto space-y-12">
+                <div class="text-center space-y-4">
+                    <span class="text-xs font-bold uppercase tracking-widest text-cta-500">Ada yang ingin ditanyakan?</span>
+                    <h2 class="font-display text-3xl font-bold text-brand-900">Pertanyaan Umum (FAQ)</h2>
+                </div>
+
+                <div class="space-y-5">
+                    <!-- FAQ 1 -->
+                    <details class="group p-6 rounded-2xl bg-brand-50 border border-brand-200 cursor-pointer open:bg-brand-100 transition-colors">
+                        <summary class="font-display font-bold text-lg text-brand-900 flex items-center justify-between gap-4 list-none">
+                            <span class="flex items-center gap-3">
+                                <i data-lucide="help-circle" class="w-5 h-5 text-brand-500 shrink-0"></i>
+                                Apakah bisa dikirim ke luar kota Madiun?
+                            </span>
+                            <i data-lucide="chevron-down" class="w-5 h-5 text-brand-500 shrink-0 group-open:rotate-180 transition-transform"></i>
+                        </summary>
+                        <p class="text-brand-700 font-medium pl-8 mt-4 leading-relaxed">
+                            Bisa! Kami menyediakan <strong>Risol Mayo Frozen Pack</strong> khusus untuk pengiriman ke luar kota. Produk dikemas higienis dan aman selama perjalanan. Hubungi kami via DM atau WhatsApp untuk info lebih lanjut mengenai metode pengiriman dan ongkir.
+                        </p>
+                    </details>
+
+                    <!-- FAQ 2 -->
+                    <details class="group p-6 rounded-2xl bg-brand-50 border border-brand-200 cursor-pointer open:bg-brand-100 transition-colors">
+                        <summary class="font-display font-bold text-lg text-brand-900 flex items-center justify-between gap-4 list-none">
+                            <span class="flex items-center gap-3">
+                                <i data-lucide="help-circle" class="w-5 h-5 text-brand-500 shrink-0"></i>
+                                Bisa pesan dalam jumlah banyak untuk acara?
+                            </span>
+                            <i data-lucide="chevron-down" class="w-5 h-5 text-brand-500 shrink-0 group-open:rotate-180 transition-transform"></i>
+                        </summary>
+                        <p class="text-brand-700 font-medium pl-8 mt-4 leading-relaxed">
+                            Sangat bisa! Kami melayani pesanan besar untuk hajatan, rapat, arisan, dan acara lainnya. Disarankan untuk melakukan <strong>pre-order minimal H-1 atau H-2</strong> dengan menghubungi kami via DM Instagram/TikTok atau chat WhatsApp agar persiapan lebih matang.
+                        </p>
+                    </details>
+
+                    <!-- FAQ 3 -->
+                    <details class="group p-6 rounded-2xl bg-brand-50 border border-brand-200 cursor-pointer open:bg-brand-100 transition-colors">
+                        <summary class="font-display font-bold text-lg text-brand-900 flex items-center justify-between gap-4 list-none">
+                            <span class="flex items-center gap-3">
+                                <i data-lucide="help-circle" class="w-5 h-5 text-brand-500 shrink-0"></i>
+                                Buka jam berapa dan hari apa saja?
+                            </span>
+                            <i data-lucide="chevron-down" class="w-5 h-5 text-brand-500 shrink-0 group-open:rotate-180 transition-transform"></i>
+                        </summary>
+                        <p class="text-brand-700 font-medium pl-8 mt-4 leading-relaxed">
+                            Kami buka mulai pukul <strong>10.00 WIB hingga habis</strong> setiap harinya. Karena produk dibuat fresh setiap hari, stok bisa habis sebelum jam tutup — jadi disarankan pesan lebih awal!
+                        </p>
+                    </details>
+
+                    <!-- FAQ 4 -->
+                    <details class="group p-6 rounded-2xl bg-brand-50 border border-brand-200 cursor-pointer open:bg-brand-100 transition-colors">
+                        <summary class="font-display font-bold text-lg text-brand-900 flex items-center justify-between gap-4 list-none">
+                            <span class="flex items-center gap-3">
+                                <i data-lucide="help-circle" class="w-5 h-5 text-brand-500 shrink-0"></i>
+                                Apakah ada nomor WhatsApp untuk dihubungi?
+                            </span>
+                            <i data-lucide="chevron-down" class="w-5 h-5 text-brand-500 shrink-0 group-open:rotate-180 transition-transform"></i>
+                        </summary>
+                        <p class="text-brand-700 font-medium pl-8 mt-4 leading-relaxed">
+                            Ada! Kamu bisa menghubungi kami langsung via WhatsApp. Cek halaman <a href="contact.html" class="text-cta-500 font-bold underline">Kontak</a> untuk tombol chat WA kami. <em>(Nomor segera diperbarui)</em>
+                        </p>
+                    </details>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA -->
+        <section class="py-20 px-6 max-w-5xl mx-auto">
+            <div class="bg-brand-500 text-white rounded-3xl px-8 py-14 text-center space-y-6 shadow-xl">
+                <h2 class="font-display text-3xl sm:text-4xl font-bold">Sudah Siap Pesan?</h2>
+                <p class="text-brand-100 text-lg font-medium max-w-xl mx-auto">
+                    Jangan tunggu kehabisan! Segera pesan risol mayo favoritmu via GoFood, GrabFood, atau langsung mampir ke lokasi kami.
+                </p>
+                <div class="flex flex-wrap justify-center gap-4 pt-2">
+                    <a href="https://gofood.co.id/en/madiun/restaurant/risol-mayo-cak-gendut-jl-letkol-suwarno-bumi-mas-2-10be9e30-9196-4947-b6d4-d0c4edbf8ae3" target="_blank" rel="noopener noreferrer" class="px-7 py-3.5 bg-white text-brand-700 text-sm font-bold rounded-full uppercase tracking-wider hover:bg-brand-100 transition-all shadow-md flex items-center gap-2">
+                        Pesan GoFood
+                    </a>
+                    <!-- ganti dengan link GrabFood asli -->
+                    <a href="#" class="px-7 py-3.5 bg-green-600 text-white text-sm font-bold rounded-full uppercase tracking-wider hover:bg-green-700 transition-all shadow-md flex items-center gap-2">
+                        Pesan GrabFood
+                    </a>
+                    <a href="products.html" class="px-7 py-3.5 bg-brand-700 text-white text-sm font-bold rounded-full uppercase tracking-wider hover:bg-brand-800 transition-all flex items-center gap-2">
+                        Lihat Semua Menu
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Shared Footer -->
+    <footer class="bg-brand-900 text-brand-200 pt-16 pb-8 px-6">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 pb-12 border-b border-brand-800">
+            <div class="space-y-6">
+                <div class="flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-full bg-brand-500 text-white flex items-center justify-center font-display text-xl font-bold overflow-hidden">
+                        <img src="image/image 2.jpg" alt="Logo" style="border-radius:100%;width:100%;height:100%;object-fit:cover;">
+                    </div>
+                    <span class="font-display text-xl tracking-wide text-white font-bold">Risol Mayo Cak Gendut</span>
+                </div>
+                <p class="text-sm text-brand-200 font-medium leading-relaxed">
+                    UMKM kuliner rumahan dari Madiun yang menyajikan aneka risol mayo lumer dengan kualitas bahan terbaik dan resep tradisional sejak 2022.
+                </p>
+            </div>
+
+            <div class="space-y-4">
+                <h4 class="font-display text-white font-bold tracking-wide text-lg">Menu Cepat</h4>
+                <ul class="space-y-2 text-sm font-medium">
+                    <li><a href="index.html" class="hover:text-brand-400 transition-colors">Beranda</a></li>
+                    <li><a href="about.html" class="hover:text-brand-400 transition-colors">Tentang Kami</a></li>
+                    <li><a href="products.html" class="hover:text-brand-400 transition-colors">Varian Menu</a></li>
+                    <li><a href="cara-pesan.html" class="hover:text-brand-400 transition-colors">Cara Pesan</a></li>
+                    <li><a href="contact.html" class="hover:text-brand-400 transition-colors">Kontak & Lokasi</a></li>
+                </ul>
+            </div>
+
+            <div class="space-y-4">
+                <h4 class="font-display text-white font-bold tracking-wide text-lg">Hubungi Kami</h4>
+                <p class="text-sm font-medium">
+                    Jl. Letkol Suwarno, Bumimas II, Blok HH/08, Kota Madiun
+                </p>
+                <div class="flex gap-4 pt-2">
+                    <a href="https://www.instagram.com/risolmayo_cak.gendut/" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-brand-800 flex items-center justify-center hover:bg-brand-500 transition-colors text-white">
+                        <i data-lucide="instagram" class="w-5 h-5"></i>
+                    </a>
+                    <a href="https://www.tiktok.com/@risolmayo_cak.gendut" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full bg-brand-800 flex items-center justify-center hover:bg-brand-500 transition-colors text-white">
+                        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto pt-8 flex flex-col md:flex-row items-center justify-between text-xs text-brand-400 font-medium gap-4">
+            <p>&copy; 2026 Risol Mayo Cak Gendut. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+        const mobileBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        mobileBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
